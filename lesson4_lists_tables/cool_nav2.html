@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cool nav for jeny</title>
+
+    <style>
+      body {
+        background-color: black;
+        font-family: sans-serif;
+      }
+      .nav-wrap {
+        border: 2px solid black;
+        width: fit-content;
+        margin: 0 auto;
+        border-radius: 500px;
+        position: relative;
+
+        background: rgb(74, 74, 74);
+
+      }
+      .nav {
+        width: fit-content;
+        anchor-name: --nav;
+        margin: 6px;
+        a {
+          z-index: 10;
+          position: relative;
+          display: inline-block;
+          padding: 20px 50px;
+          color: white;
+          text-decoration: none;
+
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            opacity: 0.2;
+          }
+
+          &.active {
+            anchor-name: --active;
+            color: black;
+          }
+
+          &:hover:before {
+            anchor-name: --nav;
+          }
+        }
+      }
+      .bubble {
+        background: white;
+
+        top: anchor(top);
+        bottom: anchor(bottom);
+        left: anchor(left);
+        right: anchor(right);
+        position: absolute;
+        transition: all 0.2s;
+        border-radius: 500px;
+
+        &.active {
+          position-anchor: --active;
+          z-index: 2;
+          background: rgb(219, 219, 219);
+
+        }
+
+        &.hover {
+          position-anchor: --nav;
+          z-index: 1;
+          background: rgb(116, 116, 116);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-wrap">
+      <div class="bubble active"></div>
+      <div class="bubble hover"></div>
+      <nav class="nav">
+        <a href="#">Jeny</a>
+        <a href="#">Tikai</a>
+        <a href="#">Adri</a>
+        <a href="#">New baby</a>
+      </nav>
+    </div>
+
+    <script>
+      const links = document.querySelectorAll("nav a")
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          links.forEach((l) => {l.classList.remove("active")});
+          link.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
