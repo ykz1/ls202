@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nutrition Facts</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: grey;
+      }
+      .label {
+        width: 400px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: white;
+      }
+      h1 {
+        margin: 0.5rem 0;
+      }
+      .bar {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        background-color: black;
+        margin: 3px 0;
+        &.thick {
+          height: 1.25rem;
+        }
+        &.thin {
+          height: 0.5rem;
+        }
+        &.medium {
+          height: 1rem;
+        }
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      tr {
+        /* display: inline-block; */
+        width: 100%;
+        margin: 3px;
+        vertical-align: middle;
+        border-bottom: 1px solid black;
+        .right-side {
+          text-align: right;
+        }
+        .value {
+          text-align: right;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="label">
+      <h1>Nutrition Facts</h1>
+      Service Size 2/3 Cup (55g)<br>
+      Servings Per Container About 8<br>
+      <div class="thick bar"></div>
+      <table>
+        <tr>
+          <td><strong>Amount Per Serving</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Calories</strong> 230</td>
+          <td class="right-side">Calories from Fat 40</td>
+        </tr>
+      </table>
+      <div class="thin bar"></div>
+      <table>
+        <tr>
+          <td></td>
+          <td class="value">% Daily Value*</td>
+        </tr>
+        <tr>
+          <td><b>Total Fat</b> 8g</td>
+          <td class="value">12%</td>
+        </tr>
+        <tr>
+          <td class="indent">  </td>
+          <td><b>Total Fat</b> 8g</td>
+          <td class="value">12%</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

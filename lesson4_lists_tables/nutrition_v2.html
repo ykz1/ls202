@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nutrition Label</title>
+    <style>
+      :root {
+        font-family: 'Helvetica Narrow', Helvetica, Arial, sans-serif;
+        font-size: 28px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        width: 100%;
+        margin: 0;
+      }
+      h1 {
+        font-family: 'Franklin Gothic Heavy', Helvetica, Arial, sans-serif;
+        font-size: 2rem;
+        font-weight: 1000;
+      }
+      table {
+        table-layout: fixed;
+        border: 2px solid black;
+        /* border-collapse: collapse; */
+        width: 680px;
+        padding: 7px 12px;
+      }
+      table th:nth-child(1),
+      table td:nth-child(1) {
+        width: 5%;
+      }
+      table th:nth-child(2),
+      table td:nth-child(2) {
+        width: 5%;
+      }
+      table th:nth-child(3),
+      table td:nth-child(3) {
+        width: 30%;
+      }
+      table th:nth-child(4),
+      table td:nth-child(4) {
+        width: 20%;
+      }
+      table th:nth-child(5),
+      table td:nth-child(5) {
+        width: 20%;
+      }
+      table th:nth-child(6),
+      table td:nth-child(6) {
+        width: 20%;
+        text-align: right;
+      }
+      th {
+        text-align: left;
+        border-bottom: 1px solid black;
+      }
+      tr {
+        padding: 5px;
+      }
+      tr.block {
+        background-color: black;
+        border-bottom: 1px solid white;
+      }
+      tr:nth-child(1 of .block){
+        height: 1rem;
+      }
+      tr:nth-child(2 of .block){
+        height: 0.5rem;
+      }
+      tr:nth-child(3 of .block){
+        height: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td colspan="6"><h1>Nutrition Facts</h1></td>
+        </tr>
+        <tr>
+          <td colspan="6">Serving Size 2/3 cup (55g)</td>
+        </tr>
+        <tr>
+          <td colspan="6">Servings Per Container About 8</td>
+        </tr>
+      </thead>
+
+      <tr class="block"><td colspan="6"></td></tr>
+      
+      <tbody>
+
+        <tr>
+          <th colspan="6">Amount Per Serving</th>
+        </tr>
+        <tr>
+          <td colspan="3"><strong>Calories</strong> 230</td>
+          <td colspan="3">Calories from Fat 40</td>
+        </tr>
+        
+        <tr class="block"><td colspan="6"></td></tr>
+        
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="3"><strong>% Daily Value *</strong></td>
+        </tr>
+
+        <dl>
+          <dt>Total Fat</dt>
+          <dd>8g</dd>
+        </dl>
+  
+        <tr class="block"><td colspan="6"></td></tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+  </body>
+</html>
