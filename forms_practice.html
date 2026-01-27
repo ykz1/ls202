@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Practice</title>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px; 
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      form {
+        margin: 5px;
+      }
+      fieldset {
+        border-radius: 8px;
+
+      }
+      dd {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="p1-6" action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="first_name">First Name</label></dt>
+          <dd><input required type="text" name="first_name" id="first_name"></dd>
+        </dl>
+        <dl>
+          <dt><label for="last_name">Last Name</label></dt>
+          <dd><input required type="text" name="last_name" id="last_name"></dd>
+        </dl>
+        <dl>
+          <dt><label for="email">Email</label></dt>
+          <dd><input required type="email" name="email" id="email" placeholder="hello@me.com" autocomplete="off"></dd>
+        </dl>
+        <dl>
+          <dt><label for="phone">Phone</label></dt>
+          <dd><input required type="tel" name="phone" id="phone" placeholder="(###) ###-####" autocomplete="off"></dd>
+        </dl>
+        <dl>
+          <dt><label for="phone_type">Phone Type</label></dt>
+          <dd>
+            <select name="phone_type" required>
+              <option value="home" selected>Home</option>
+              <option value="business">Business</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt><label for="message">Message</label></dt>
+          <dd><textarea name="message" id="message" rows="6" cols="80" placeholder="Type your message here"></textarea></dd>
+        </dl>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+    <form class="p7" action="#" method="post">
+      <fieldset>
+        <label>Search for <input type="text" name="search" id="search"></label>
+        <label><input type="radio" name="search_type" value="TV">TV</label>
+        <label><input type="radio" name="search_type" value="Movies">Movies</label>
+        <label><input type="radio" name="search_type" value="Music">Music</label>
+        <input type="submit">
+      </fieldset>
+    </form>
+    <form class="p8">
+      <fieldset>
+        <dl>
+          <dt><label for="movie">Movie</label></dt>
+          <dd>
+            <select name="movie" size="4">
+              <option value="looper">Looper</option>
+              <option value="frozen">Frozen</option>
+              <option value="frozen_boy">Tommy Boy</option>
+              <option value="aliens" selected>Aliens</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt><label for="rating">Rating</label></dt>
+          <dd><input type="number" name="rating" max="5" min="1"></dd>
+        </dl>
+        <label><input type="checkbox" name="favorite">Add to my favorites</label>
+      </fieldset>
+    </form>
+    <form class="p11" action="#" method="post">
+      <fieldset>
+        <label for="news_category">News Category</label>
+        <ul>
+          <li><label><input type="radio" name="news_category" value="Core">Core</label></li>
+          <li><label><input type="radio" name="news_category" value="Plugins and Libraries">Plugins and Libraries</label></li>
+          <li><label><input type="radio" name="news_category" value="Conventions">Conventions</label></li>
+          <li><label><input type="radio" name="news_category" value="Reviews">Reviews</label></li>
+          <li><label><input type="radio" name="news_category" value="Opinion">Opinion</label></li>
+          <li><label><input type="radio" name="news_category" value="People">People</label></li>
+        </ul>
+        <label for="news_tags">News Tags</label>
+        <ul>
+          <li><label><input type="checkbox" name="news_tags" value="HTML">HTML</label></li>
+          <li><label><input type="checkbox" name="news_tags" value="CSS">CSS</label></li>
+          <li><label><input type="checkbox" name="news_tags" value="Javascrip">Javascrip</label></li>
+          <li><label><input type="checkbox" name="news_tags" value="Ruby">Ruby</label></li>
+          <li><label><input type="checkbox" name="news_tags" value="Rails">Rails</label></li>
+          <li><label><input type="checkbox" name="news_tags" value="Python">Python</label></li>
+          <li><label><input type="checkbox" name="news_tags" value="Django">Django</label></li>
+        </ul>
+      </fieldset>
+    </form>
+    <form class="p12" action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="categories">Categories</label></dt>
+          <dd>
+            <select name="categories" size="6">
+              <option>Core</option>
+              <option>Plugins and Libraries</option>
+              <option>Conventions</option>
+              <option>Reviews</option>
+              <option>Opinions</option>
+              <option>People</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt><label for="tags">Tags</label></dt>
+          <dd>
+            <select name="tags" size="7" multiple>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>Javascript</option>
+              <option>Ruby</option>
+              <option>Rails</option>
+              <option>Python</option>
+              <option>Django</option>
+            </select>
+          </dd>
+        </dl>
+        <input type="Submit" value="Filter">
+        <input type="reset">
+      </fieldset>
+    </form>
+  </body>
+</html>
