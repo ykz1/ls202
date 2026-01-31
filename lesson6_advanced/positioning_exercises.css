@@ -1,0 +1,239 @@
+:root {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+}
+
+div.container {
+  border: 2px solid #8E8E8E;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 1000px;
+}
+section {
+  margin: 5px 0;
+}
+section.display::after {
+  border-bottom: 2px dashed black;
+  content: "";
+  display: block;
+  padding-top: 30px;
+  width: 100%;
+}
+h1, h2 {
+  color: #B84B43;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 35px;
+}
+
+div.border {
+  border: 2px dashed #4B4B4B;
+  padding: 30px;
+  margin: 45px;
+  width: 650px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.inline_w_margin ae {
+  margin: 30px;
+}
+
+.inline_w_padding a {
+  padding: 30px;
+  background-color: #2A7217;
+  color: white;
+}
+
+.inline_float {
+  overflow: hidden;
+}
+
+.inline_float a {
+  background-color: #2A7217;
+  border: 3px solid #205712;
+  color: white;
+
+  float: left;
+
+  padding: 30px;
+  margin: 15px;
+}
+
+div.block_none {
+  background-color: #417FF4;
+  color: white;
+}
+
+div.block_height {
+  background-color: #2A7217;
+  color: white;
+  height: 60px;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+div.block_width {
+  background-color: #EC6444;
+  color: white;
+  width: 90px;
+}
+
+div.block_width_height {
+  background-color: #F5BBC4;
+  color: white;
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+div.float_left {
+  background-color: #1e90ff;
+  border: 1px solid red;
+  color: white;
+  float: left;  
+}
+
+div.float_right {
+  background-color: #EC6444;
+  border: 1px solid red;
+  color: white;
+  float: right;  
+}
+
+div.wrapper::after,
+div.wrapper:before {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+div.float_left_wh {
+  background-color: #EC6444;
+  color: white;
+  float: left;
+  width: 40%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+div.float_right_wh {
+  background-color: #1e90ff;
+  color: white;
+  float: right;  
+  width: 50%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+a.anchor_block {
+  display: block;
+  background-color: #1e90ff;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+div.nav {
+  text-align: center;
+}
+div.nav a {
+  background-color: #1e90ff;
+  color: white;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 20px 8px 25px;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+div.box1 {
+  background-color: #EC6444;
+  color: white;
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 450px;
+}
+div.box2 {
+  background-color: #1e90ff;
+  color: white;
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 450px;
+}
+div.box3 {
+  background-color: #3D7D4F;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 900px;
+  clear: both;
+}
+
+li {
+  margin: 0 0 10px 40px;
+  font-style: italic;
+}
+
+div.pos {
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  
+  box-sizing: border-box;
+  padding: 25px 35px;
+}
+
+div.fixed {
+  background-color: #1e90ff;
+  width: 225px;
+  
+  position: fixed;
+  bottom: 50px;
+  left: 35px;
+}
+
+div.rel {
+  background-color: #EC6444;
+  width: 325px;
+  margin-bottom: 30px;
+
+  position: relative;
+  right: 90px;
+  bottom: -45px;
+}
+
+div.wrap {
+  position: relative;
+}
+div.abs {
+  background-color: #3D7D4F;
+  width: 200px;
+
+  position: absolute;
+  top: -30px;
+  left: 230px;
+}
